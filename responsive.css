@@ -1,0 +1,167 @@
+/* nav reponsive */
+@media screen and (max-width: 930px) {
+    .header{
+        padding: 1.3rem 5%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header{
+        position: fixed;
+    }
+    .icons{
+        display: inline-flex;
+    }
+
+    #cb:checked~.icons #m-id{
+        display: none;
+    }
+    
+    .icons #x-id{
+        display: none;
+    }
+
+    #cb:checked~.icons #x-id{
+        display: block;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        margin: 10px 0;
+        position: absolute;
+        top: 6%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #ff004f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease;
+        overflow: hidden;
+    }
+    
+    #cb:checked~.navbar{
+        height: 20.5rem;
+    }
+
+    nav ul li a{
+        display: block;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        /* text-decoration: 2px solid black underline; */
+    }
+
+}
+
+/* home responsive */
+@media screen and (max-width: 930px) {
+    .lefts{
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home{
+        flex-direction: column;
+        margin: 0px 30px 0 0;
+    }
+    .lefts{
+        margin: 2rem;
+    }
+}
+
+
+/* about responsive */
+
+@media screen and (max-width: 850px) {
+    .obox {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .card {
+        width: 240px; 
+    }
+}
+
+@media screen and (max-width: 410px) {
+    h2{
+        margin: 0 3px;
+    }
+}
+
+
+
+/* skill responsive */
+@media screen and (max-width: 810px) {
+    .ski{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .ski{
+        flex-wrap: wrap;
+    }
+
+}
+
+/* contact responsive */
+@media screen and (max-width: 760px) {
+    .row{
+        flex-direction: column;
+    }
+
+    .infr{
+        margin: 0 10rem;
+    }
+
+    .infr form{
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .infr{
+        margin: 0 5rem;
+    }
+
+    .infr form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .infr{
+        margin: 0 2rem;
+    }
+
+    .infr form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .mail, .pn{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1200) {
+    .social a:active{
+        color: white;
+        background-color: transparent;
+        border: 2px solid #ff004f;
+        cursor: pointer;
+    }
+    
+}
