@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.title{
+    font-size: 30px;
+    color: white;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.color1{
+    text-decoration:underline;
+    color: #ff004f;
+}
+
+.sketch{
+    background: black;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.dispi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.drawings{
+    max-height: 450px;
+    max-width: 500px;
+    box-shadow: 0 8px 15px #920733;
+}
+
+.foot{
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    height: 5vh;
+}
+
+.end{
+    line-height: 35px;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #ff004f;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 2px 11px;
+    border-radius: 30px;
+    transition: .4s;
+    margin: 0 10px;
+}
+
+.social a:hover{
+    color: white;
+    background-color: transparent;
+    border: 2px solid #ff004f;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+    .drawings{
+        max-width: 350px;
+    } 
+}
